@@ -18,8 +18,8 @@ def carregar_dados():
 if "df_leaderboard" not in st.session_state:
     st.session_state.df_leaderboard = carregar_dados()
 
-st.title("⚽ Noite Aberta ICNAS")
-st.subheader("Torneio de Remates Interativo")
+st.title("⚽ ICNAS à Noite")
+st.subheader("Torneio de Penáltis")
 
 # --- SECÇÃO 1: REGISTO DE NOVO PARTICIPANTE ---
 st.header("📝 Próximo Participante")
