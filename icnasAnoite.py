@@ -19,7 +19,7 @@ if "df_leaderboard" not in st.session_state:
     st.session_state.df_leaderboard = carregar_dados()
 
 st.title("⚽ ICNAS À NOITE ⚽")
-st.subheader("Torneio de Penaltys")
+st.subheader("Torneio de Penáltis")
 
 # --- SECÇÃO 1: REGISTO DE NOVO PARTICIPANTE ---
 st.header("📝 Próximo Participante")
