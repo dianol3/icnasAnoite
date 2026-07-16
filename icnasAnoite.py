@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 # Configuração da página
-st.set_page_config(page_title="Noite Aberta ICNAS - Torneio de Remates", page_icon="⚽", layout="centered")
+st.set_page_config(page_title="ICNAS à Noite - Torneio de Penáltis", page_icon="⚽", layout="centered")
 
 FILE_PATH = "classificacao_icnas.csv"
 
@@ -18,8 +18,8 @@ def carregar_dados():
 if "df_leaderboard" not in st.session_state:
     st.session_state.df_leaderboard = carregar_dados()
 
-st.title("⚽ ICNAS À NOITE ⚽")
-st.subheader("Torneio de Penáltis")
+st.title("⚽ Noite Aberta ICNAS")
+st.subheader("Torneio de Remates Interativo")
 
 # --- SECÇÃO 1: REGISTO DE NOVO PARTICIPANTE ---
 st.header("📝 Próximo Participante")
@@ -28,7 +28,7 @@ st.header("📝 Próximo Participante")
 nome = st.text_input("Nome do Participante:", placeholder="Insira o nome aqui...", key="input_nome")
 
 col1, col2, col3 = st.columns(3)
-opcoes_pontos = [200, 500, 1000, -100]
+opcoes_pontos = [0, 200, 500, 1000, -100]
 
 with col1:
     r1 = st.selectbox("Remate 1:", opcoes_pontos, key="r1")
